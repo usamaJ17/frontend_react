@@ -13,7 +13,7 @@ function useAutoLogin() {
     (async function autoLoginApiCall() {
       try {
         const response = await axios.get(
-          `http://localhost:4242/api/refresh`,
+          `https://mern-back-1jic.onrender.com/api/refresh`,
           {
             withCredentials: true,
           }

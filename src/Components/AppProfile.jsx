@@ -241,7 +241,7 @@ const [specificGoals, setSpecificGoals] = useState('');
 
   const sendProfileDataEmail = async (profileData) => {
     try {
-      const response = await fetch('http://localhost:4242/api/send-profiledata-email', {
+      const response = await fetch('https://mern-back-1jic.onrender.com/api/send-profiledata-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

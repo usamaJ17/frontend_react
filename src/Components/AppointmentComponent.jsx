@@ -43,7 +43,7 @@ const AppointmentComponent = () => {
   const sendAppointmentEmail = async () => {
     try {
       // Call the endpoint to send the appointment email
-      await axios.post('http://localhost:4242/api/send-appointment-email', {
+      await axios.post('https://mern-back-1jic.onrender.com/api/send-appointment-email', {
         appointmentDate: date,
         appointmentTime: time,
         email,

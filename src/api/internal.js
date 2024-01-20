@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:4242",
+  baseURL: "https://mern-back-1jic.onrender.com",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const signout = async () => {
         originalReq._isRetry = true;
   
         try {
-          await axios.get(`http://localhost:4242/api/refresh`, {
+          await axios.get(`https://mern-back-1jic.onrender.com/api/refresh`, {
             withCredentials: true,
           });
   

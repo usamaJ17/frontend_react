@@ -20,7 +20,7 @@ const Quiz = () => {
   let timerInterval;
   useEffect(() => {
     axios
-      .get("http://localhost:4242/api/quiz")
+      .get("https://mern-back-1jic.onrender.com/api/quiz")
       .then((response) => setQuizzes(response.data))
       .catch((error) => console.error("Error fetching quizzes:", error));
   }, []);
